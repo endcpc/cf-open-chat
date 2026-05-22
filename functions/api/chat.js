@@ -47,7 +47,7 @@ export async function onRequest(context) {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://your.pages.dev',
+        'HTTP-Referer': 'https://no-chat.pages.dev',
         'X-Title': 'AI Chat'
       },
       body: JSON.stringify({
