@@ -31,7 +31,7 @@ export async function onRequest(context) {
     });
   }
 
-  const { model = 'openrouter/free', messages } = body;
+  const { model = 'meta-llama/llama-3.3-70b-instruct:free', messages } = body;
 
   if (!messages || !Array.isArray(messages)) {
     return new Response(JSON.stringify({ error: 'Missing messages' }), {
