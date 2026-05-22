@@ -39,7 +39,7 @@ export async function onRequest(context) {
   }
 
   const {
-    model = "meta-llama/llama-3.3-70b-instruct:free", // choose a chat‑compatible model
+    model = "openai/gpt-oss-20b:free", // choose a chat‑compatible model
     messages
   } = payload;
 
